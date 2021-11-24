@@ -79,10 +79,5 @@ class MainActivity : AppCompatActivity() {
             txtOut.text = DecimalFormat("0.######").format(result).toString()
         }
     }
-    private fun getInputExpression(): String {
-        var expression = txtIn.text.replace(Regex("÷"), "/")
-        expression = expression.replace(Regex("x"), "*")
-        return expression
-    }
 
 }
